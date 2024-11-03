@@ -1,0 +1,57 @@
+.nav-btn{
+    background-color: brown;
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+    font-weight: 400;
+}
+
+.py-2{
+    background-color: brown;
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+    font-weight: 400; 
+}
+
+button:hover{
+    background-color: rgb(245, 159, 159);
+}
+
+p:hover{
+   color: rgb(245, 159, 159);
+}
+
+/* Base styles for the grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+/* Media query for tablets and smaller screens */
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 640px) {
+    .grid {
+        grid-template-columns: 1fr; /* Stack items in a single column */
+    }
+    .nav-btn {
+        width: 100%; /* Make buttons full-width on mobile */
+    }
+}
+
+/* Additional styles for the footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: brown; /* Light background for footer */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

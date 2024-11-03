@@ -1,0 +1,483 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+
+header {
+    background-color: #ffe4e6;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 0.875rem;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+nav .text-3xl {
+    font-weight: bold;
+    color: brown;
+}
+
+nav ul {
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    color: #4b5563;
+    text-decoration: none;
+}
+
+nav ul li a.text-pink-500 {
+    color: #ec4899;
+}
+
+nav .flex i {
+    color: #4b5563;
+}
+
+nav .flex i:hover{
+    color: brown;
+}
+
+li a:hover{
+    color: brown;
+}
+
+section.relative {
+    background-color: #f3f4f6;
+    padding: 4rem 0;
+}
+
+section.relative .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.relative .container .width {
+    width: 50%;
+}
+
+section.relative .container .width img {
+    width: 50%;
+}
+
+section.relative .container .width.text-center {
+    text-align: center;
+}
+
+section.relative .container .width.text-center h1 {
+    font-size: 3.75rem;
+    font-weight: bold;
+    color: #1f2937;
+}
+
+section.relative .container .width.text-center p {
+    margin-top: 1rem;
+    color: #6b7280;
+}
+
+section.relative .container .width.text-center button {
+    margin-top: 1.5rem;
+    padding: 0.75rem 2rem;
+    background-color: #1f2937;
+    color: white;
+    border-radius: 9999px;
+}
+
+section.py-12 {
+    padding: 3rem 0;
+}
+
+section.py-12.bg-white {
+    background-color: white;
+}
+
+section.py-12.bg-gray-100 {
+    background-color: #f3f4f6;
+}
+
+section.py-12 .container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+section.py-12 .container.text-center {
+    text-align: center;
+}
+
+section.py-12 .container.text-center h2 {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: #1f2937;
+}
+
+section.py-12 .container.text-center .flex {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+section.py-12 .container.text-center .flex .width3 {
+    width: 25%;
+}
+
+section.py-12 .container.text-center .flex .width3 img {
+    width: 100%;
+}
+
+section.py-12 .container.text-center .flex .width3 p {
+    margin-top: 0.5rem;
+    color: #1f2937;
+}
+
+section.py-12 .container.text-center .flex .width3 p.text-gray-500 {
+    color: #6b7280;
+}
+
+section.py-12.bg-white .container.flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+section.py-12.bg-white .container.flex .width2 {
+    width: 33.3333%;
+    padding: 2rem;
+    text-align: center;
+}
+
+section.py-12.bg-white .container.flex .width2 img {
+    width: 100%;
+}
+
+section.py-12.bg-white .container.flex .width2 p {
+    margin-top: 1rem;
+    color: #1f2937;
+}
+
+section.py-12.bg-white .container.flex .width2 p.text-2xl {
+    font-size: 1.5rem;
+}
+
+section.py-12.bg-white .container.flex .width2 p.text-4xl {
+    font-size: 2.25rem;
+}
+
+section.py-12.bg-white .container.flex .width2 button {
+    margin-top: 1rem;
+    padding: 0.5rem 1.5rem;
+    background-color: #1f2937;
+    color: white;
+    border-radius: 9999px;
+}
+
+section.py-12.bg-gray-800 {
+    background-color: #1f2937;
+    color: white;
+}
+
+section.py-12.bg-gray-800 .container {
+    text-align: center;
+}
+
+section.py-12.bg-gray-800 .container h2 {
+    font-size: 1.875rem;
+    font-weight: bold;
+}
+
+section.py-12.bg-gray-800 .container p {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+}
+
+section.py-12.bg-gray-800 .container button {
+    margin-top: 1.5rem;
+    padding: 0.75rem 2rem;
+    background-color: white;
+    color: #1f2937;
+    border-radius: 9999px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+:root {
+    --primary-color: #1f2937;
+    --secondary-color: #ec4899;
+    --gray-500: #6b7280;
+    --gray-600: #4b5563;
+    --white: #ffffff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+/*extra styles*/
+.fade {
+    -webkit-animation: fade 1.5s;
+    -moz-animation: fade 1.5s;
+    -o-animation: fade 1.5s;
+    animation: fade 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: 0.4} 
+    to {opacity: 1}
+}
+@-moz-keyframes fade {
+    from {opacity: 0.4} 
+    to {opacity: 1}
+}
+@keyframes fade {
+    from {opacity: 0.4} 
+    to {opacity: 1}
+}
+/*slide show sec */
+
+.mySlides {
+    display: none;
+}
+
+
+.fade {
+    animation: fade 1.5s; /* Add fade effect */
+}
+
+@keyframes fade {
+    from {opacity: 0.4} 
+    to {opacity: 1}
+}
+
+
+footer {
+    text-align: center;          /* Center the text */
+    padding: 20px;              /* Add padding */
+    background-color: brown; /* Set background color */
+    color: rgb(56, 56, 119);               /* Set text color */
+    position: relative;         /* Positioning */
+    bottom: 0;                  /* Align to the bottom */
+    width: 100%;                /* Full width */
+}
+
+/* Base styles for all screen sizes */
+body {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+header {
+    background-color: #ffe4e6;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 0.875rem;
+}
+
+/* Extra small devices (phones, 320px and up) */
+@media only screen and (min-width: 320px) {
+    nav {
+        padding: 0.5rem 1rem;
+        
+    }
+
+    nav ul {
+        gap: 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    section.relative .container .width.text-center h1 {
+        font-size: 2rem;
+    }
+
+    section.relative .container .width img {
+        width: 100%;
+    }
+
+    section.py-12 .container.text-center .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.py-12 .container.text-center .flex .width3 {
+        width: 100%;
+    }
+
+    section.py-12.bg-white .container.flex {
+        flex-direction: column;
+    }
+
+    section.py-12.bg-white .container.flex .width2 {
+        width: 100%;
+    }
+}
+
+/* Small devices (larger phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+    nav {
+        padding: 0.8rem 1.5rem;
+    }
+
+    nav ul {
+        gap: 1rem;
+        font-size: 1rem;
+    }
+
+    section.relative .container .width.text-center h1 {
+        font-size: 2.5rem;
+    }
+
+    section.py-12 .container.text-center .flex .width3 {
+        width: 100%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    nav {
+        padding: 1rem 2rem;
+    }
+
+    section.relative .container {
+        flex-direction: row;
+    }
+
+    section.relative .container .width.text-center h1 {
+        font-size: 3rem;
+    }
+
+    section.py-12 .container.text-center .flex {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    section.py-12 .container.text-center .flex .width3 {
+        width: 45%;
+    }
+
+    section.py-12.bg-white .container.flex {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    section.py-12.bg-white .container.flex .width2 {
+        width: 45%;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    section.relative .container .width.text-center h1 {
+        font-size: 3.5rem;
+    }
+
+    section.py-12 .container.text-center .flex .width3 {
+        width: 30%;
+    }
+
+    section.py-12.bg-white .container.flex .width2 {
+        width: 30%;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+
+    section.relative .container .width.text-center h1 {
+        font-size: 3.75rem;
+    }
+}
+
+/* XXL devices (larger desktops, 1400px and up) */
+@media only screen and (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+}
+
+
+
+    /* Base styles */
+    .text-lg {
+        font-size: 1.125rem; /* Base font size for larger screens */
+    }
+
+    .text-xl {
+        font-size: 1.25rem; /* Base font size for larger screens */
+    }
+
+    /* Media Queries */
+    @media (max-width: 768px) {
+        .text-lg {
+            font-size: 1rem; /* Adjust font size for tablets and smaller screens */
+        }
+
+        .text-xl {
+            font-size: 1.125rem; /* Adjust font size for tablets and smaller screens */
+        }
+
+        .grid {
+            grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+        }
+
+        .container {
+            padding: 0 16px; /* Adjust padding for smaller screens */
+        }
+    }
+
+    @media (max-width: 480px) {
+        .text-lg {
+            font-size: 0.875rem; /* Adjust font size for mobile screens */
+        }
+
+        .text-xl {
+            font-size: 1rem; /* Adjust font size for mobile screens */
+        }
+
+        .grid {
+            grid-template-columns: 1fr; /* 1 column for mobile screens */
+        }
+
+        nav {
+            flex-direction: column; /* Stack navigation items vertically */
+            align-items: flex-start; /* Align items to the start */
+        }
+
+        nav ul {
+            flex-direction: column; /* Stack navigation links vertically */
+            
+        }
+
+        nav ul li {
+            margin-bottom: 10px; /* Add margin between links */
+        }
+    }
+
+
+
