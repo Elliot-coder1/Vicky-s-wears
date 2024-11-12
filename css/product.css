@@ -1,4 +1,4 @@
-.nav-btn{
+.nav-btn {
     background-color: brown;
     color: white;
     padding: 10px;
@@ -6,7 +6,7 @@
     font-weight: 400;
 }
 
-.py-2{
+.py-2 {
     background-color: brown;
     color: white;
     padding: 10px;
@@ -14,12 +14,13 @@
     font-weight: 400; 
 }
 
-button:hover{
+/* Hover effects */
+button:hover {
     background-color: rgb(245, 159, 159);
 }
 
-p:hover{
-   color: rgb(245, 159, 159);
+p:hover {
+    color: rgb(245, 159, 159);
 }
 
 /* Base styles for the grid */
